@@ -22,7 +22,7 @@ body{margin:0;padding:0;background:#ffffff;font-family:Arial,Helvetica,sans-seri
 .nl-feature-item{min-width:0;min-height:82px;padding:12px 20px;display:flex;align-items:center;justify-content:center;text-align:center;}
 .nl-feature-border{border-right:1px solid #d5cbb9;}
 .nl-cta{width:100%;display:grid;grid-template-columns:44% 56%;background:#073b34;}
-.nl-cta-image{width:100%;min-height:280px;background-image:url('https://northlandbags.com/cdn/shop/files/6002-DIG-CA10_2.png?');background-size:cover;background-position:center;background-repeat:no-repeat;}
+.nl-cta-image{width:100%;min-height:280px;background-image:url('https://northlandbags.com/cdn/shop/files/6002-DIG-CA10_2.png?');background-size:cover;background-position:bottom center;background-repeat:no-repeat;}
 .nl-cta-content{width:100%;min-width:0;min-height:280px;padding:35px 40px;color:#fff;display:flex;flex-direction:column;justify-content:center;position:relative;overflow:hidden;}
 .nl-page img{max-width:100%;}
 .nl-page a{max-width:100%;}
