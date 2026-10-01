@@ -1,0 +1,85 @@
+*,*::before,*::after{box-sizing:border-box;}
+html{margin:0;padding:0;}
+body{margin:0;padding:0;background:#ffffff;font-family:Arial,Helvetica,sans-serif;}
+.nl-page{width:100%;max-width:1400px;margin:0 auto;background:#f7f2e9;color:#123b35;overflow:hidden;}
+.nl-hero{width:100%;display:grid;grid-template-columns:43% 57%;min-height:520px;background:#f7f1e5;overflow:hidden;}
+.nl-hero-content{width:100%;min-width:0;padding:50px 45px;display:flex;flex-direction:column;justify-content:center;position:relative;z-index:2;}
+.nl-hero-image{width:100%;min-width:0;min-height:520px;background-image:url('https://cdn.shopify.com/s/files/1/0577/7830/7142/files/banner_img_s01.webp?v=1790767761');background-size:cover;background-position:center center;background-repeat:no-repeat;}
+.nl-logo{font-family:Georgia,'Times New Roman',serif;font-size:44px;line-height:1;color:#073b34;font-weight:bold;display:inline-block;width:max-content;max-width:100%;padding-bottom:8px;border-bottom:2px solid #a87b3e;}
+.nl-hero-title{font-family:Georgia,'Times New Roman',serif;color:#073b34;font-size:44px;line-height:.98;margin:0 0 15px;font-weight:bold;}
+.nl-buttons,.nl-cta-buttons{display:flex;flex-wrap:wrap;gap:8px;}
+.nl-buttons a,.nl-cta-buttons a{white-space:nowrap;}
+.nl-trustbar{width:100%;display:grid;grid-template-columns:repeat(3,1fr);background:#073b34;color:#fff;}
+.nl-trust-item{min-width:0;padding:14px 20px;display:flex;align-items:center;justify-content:center;gap:12px;}
+.nl-trust-border{border-right:1px solid rgba(255,255,255,.2);}
+.nl-collections{background:#f8f3e9;padding:25px 20px 20px;text-align:center;}
+.nl-section-title{font-family:Georgia,'Times New Roman',serif;font-size:29px;line-height:1.1;color:#073b34;margin:0 0 5px;}
+.nl-product-grid{width:100%;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:6px;text-align:center;}
+.nl-product-card{background:#fffdf8;padding:5px 5px 10px;min-width:0;}
+.nl-product-img{display:block;width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;}
+.nl-product-title{font-family:Georgia,'Times New Roman',serif;color:#173e38;font-size:15px;line-height:1.2;margin:8px 0 6px;}
+.nl-features{width:100%;display:grid;grid-template-columns:repeat(3,1fr);background:#f4eee2;border-top:1px solid #d9cfbd;}
+.nl-feature-item{min-width:0;min-height:82px;padding:12px 20px;display:flex;align-items:center;justify-content:center;text-align:center;}
+.nl-feature-border{border-right:1px solid #d5cbb9;}
+.nl-cta{width:100%;display:grid;grid-template-columns:44% 56%;background:#073b34;}
+.nl-cta-image{width:100%;min-height:280px;background-image:url('https://northlandbags.com/cdn/shop/files/6002-DIG-CA10_2.png?');background-size:cover;background-position:bottom center;background-repeat:no-repeat;}
+.nl-cta-content{width:100%;min-width:0;min-height:280px;padding:35px 40px;color:#fff;display:flex;flex-direction:column;justify-content:center;position:relative;overflow:hidden;}
+.nl-page img{max-width:100%;}
+.nl-page a{max-width:100%;}
+
+@media (max-width:1024px){
+.nl-hero{grid-template-columns:48% 52%;min-height:460px;}
+.nl-hero-content{padding:38px 30px;}
+.nl-hero-image{min-height:460px;}
+.nl-logo{font-size:36px;}
+.nl-hero-title{font-size:36px;}
+.nl-product-grid{grid-template-columns:repeat(4,minmax(0,1fr));}
+.nl-collections{padding:22px 15px 18px;}
+.nl-trust-item{padding:13px 12px;}
+.nl-feature-item{padding:12px 12px;}
+.nl-cta-content{padding:30px;}
+}
+
+@media (max-width:767px){
+.nl-page{width:100%;max-width:100%;}
+.nl-hero{display:flex;flex-direction:column;min-height:0;}
+.nl-hero-content{width:100%;padding:36px 22px 30px;order:1;}
+.nl-hero-image{width:100%;min-height:300px;height:300px;order:2;background-position:center center;}
+.nl-logo{font-size:34px;padding-bottom:7px;}
+.nl-hero-title{font-size:35px;line-height:1.02;margin-bottom:14px;}
+.nl-buttons{width:100%;flex-direction:column;gap:8px;}
+.nl-buttons a{width:100%;justify-content:center;}
+.nl-trustbar{grid-template-columns:1fr;}
+.nl-trust-item,.nl-trust-border{width:100%;border-right:0;border-bottom:1px solid rgba(255,255,255,.2);padding:14px 18px;justify-content:flex-start;}
+.nl-trust-item:last-child{border-bottom:0;}
+.nl-collections{padding:24px 12px 18px;}
+.nl-section-title{font-size:27px;}
+.nl-product-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;}
+.nl-product-card{padding:5px 5px 12px;}
+.nl-product-title{font-size:14px;min-height:34px;display:flex;align-items:center;justify-content:center;}
+.nl-features{grid-template-columns:1fr;}
+.nl-feature-item,.nl-feature-border{min-height:76px;border-right:0;border-bottom:1px solid #d5cbb9;padding:12px 18px;}
+.nl-feature-item:last-child{border-bottom:0;}
+.nl-cta{display:flex;flex-direction:column;}
+.nl-cta-image{width:100%;min-height:240px;height:240px;order:1;}
+.nl-cta-content{width:100%;min-height:0;padding:32px 22px 35px;order:2;}
+.nl-cta-buttons{width:100%;flex-direction:column;}
+.nl-cta-buttons a{width:100%;justify-content:center;}
+}
+
+@media (max-width:420px){
+.nl-hero-content{padding:30px 17px 25px;}
+.nl-logo{font-size:29px;}
+.nl-hero-title{font-size:30px;}
+.nl-hero-image{min-height:250px;height:250px;}
+.nl-product-grid{gap:6px;}
+.nl-product-title{font-size:13px;}
+.nl-collections{padding-left:8px;padding-right:8px;}
+.nl-cta-content{padding-left:17px;padding-right:17px;}
+}
+
+@media (max-width:340px){
+.nl-product-grid{grid-template-columns:1fr;}
+.nl-product-title{min-height:auto;}
+.nl-hero-title{font-size:28px;}
+}
